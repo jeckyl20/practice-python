@@ -8,7 +8,7 @@ Create a program that asks the user for a number and then prints out a list of a
 
 num = int(raw_input("Please give me a number to test: "))
 divisors = []
-for i in range(1,num):
+for i in range(1,num + 1):
     if num % i == 0:
         divisors.append(i)
 print divisors
