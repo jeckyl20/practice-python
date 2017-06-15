@@ -56,3 +56,6 @@ print rand1
 print rand2
 print rcommon
 
+## Trying it as a one liner
+print "One line solution below:"
+print [ x for x in a if x in b for x in b if x in a ] 

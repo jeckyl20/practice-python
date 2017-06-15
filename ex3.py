@@ -37,3 +37,7 @@ for i in a:
     if i < test:
         new.append(i)
 print new
+
+## Try doing it in one line
+print "In one line of python below:"
+print [ x for x in a if x <= 20 ]
