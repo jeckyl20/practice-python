@@ -9,5 +9,7 @@ Let’s say I give you a list saved in a variable: a = [1, 4, 9, 16, 25, 36, 49,
 a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 
 ## I first tried i % 2 == 0 for i in a, but that just returns True or False if it is even
-even = [i for i in a if i % 2 == 0]
-print even
+print [i for i in a if i % 2 == 0]
+
+
+print [i for i in [1, 4, 9, 16, 25, 36, 49, 64, 81, 100] if i % 2 == 0]
