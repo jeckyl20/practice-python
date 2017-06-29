@@ -26,7 +26,6 @@ b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]
 rand1 = [ random.randint(1,20) for y in range(1,15) ]
 rand2 = [ random.randint(1,50) for y in range(1,21) ]
 
-#print rand1
 ## Function to find common elements in list
 def get_common(a, b):
     common = []

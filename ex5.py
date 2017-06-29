@@ -15,6 +15,7 @@ Take two lists, say for example these two:
         Write this in one line of Python (don’t worry if you can’t figure this out at this point - we’ll get to it soon)
 '''
 from random import *
+#import random -- use this import style
 rand1 = []
 rand2 = []
 
