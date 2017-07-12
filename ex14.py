@@ -30,7 +30,7 @@ def get_uniq(a):
     print unique
 
 def get_uniq_set1(a):
-    return set(a)
+    return list(set(a))
 
 def get_uniq_set(a, b):
     '''Use sets to get the union of two lists'''
