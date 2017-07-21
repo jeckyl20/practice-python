@@ -9,6 +9,9 @@ Extra:
 
     Ask the user how strong they want their password to be. For weak passwords, pick a word or two from a list.
 '''
+'''
+ - Another challenge from Joe, use a different method but similar to random.choice() to get all characters at once
+'''
 import string
 import random
 

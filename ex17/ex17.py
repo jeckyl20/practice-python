@@ -10,7 +10,8 @@ Use the BeautifulSoup and requests Python packages to print out a list of all th
 ### some sites I used to reference:
 http://www.compjour.org/warmups/govt-text-releases/intro-to-bs4-lxml-parsing-wh-press-briefings/
 
-
+ -- after talking to Joe, I look to be missing some article headings
+  - maybe remove the find() in the a = h.find line
 '''
 import requests
 import bs4
@@ -27,12 +28,14 @@ if __name__ == "__main__":
     articles1 = []
     for h in soup.find_all(class_="story-heading"):
         try:
-            a = h.find('a').text.lstrip()
-            print a
+#            a = h.find('a').text.lstrip() ## my original, missing some titles
+            a = h.text.replace("\n", " ").strip()
+#            print a 
             articles1.append(a)
         except AttributeError:
             pass
-    print len(articles1)
+    print '\n'.join(set(articles1))
+    print len(set(articles1))
 
 #    print "---------------------- Break this apart -----------------------"
 #    print "----------------------  -----------------------"
