@@ -69,7 +69,6 @@ if __name__ == "__main__":
     print "Welcome to the Cows and Bulls game!"
     num = gen_num()
     num_string = ''.join(map(str,num))
-    print num
     while answer != num_string:
         tguess += 1
         answer = raw_input("Please enter a four digit number:")
